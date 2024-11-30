@@ -1,0 +1,33 @@
+What is an IP address
+https://app.hackinghub.io/nbbc-what-is-an-ip-address
+
+What are IP Addresses?
+IP addresses are used to locate and talk to other devices on your own and remote networks. There are two versions of IP addresses IP version 4 (IPv4) and IP version 6 (IPv6). This lesson is just going to cover IPv4.
+
+IPv4 addresses contain four blocks of numbers ranging from 0 to 255, separated by decimal points, for example,  192.168.1.1
+
+There are two different types of IP addresses, private and public.
+
+Private IP Addresses:
+Private IP addresses are reserved for devices on a private network (or LAN) such as your home network and cannot be directly accessed by other devices on the internet. The following table shows the private IP address ranges and the number of devices they can support.
+
+StartEndAddresses192.168.0.0192.168.255.25565,536172.16.0.0172.31.255.2551,048,57610.0.0.010.255.255.25516,777,216
+
+Typically you'll find your home internet router comes with an IP address of 192.168.1.1 or 192.168.0.1, which falls into the smallest range of private IP addresses. You'd only usually find 10.0.0.0 range IP addresses in institutions like education or government, but you'd also be free to use this on your home network if you so wish.
+
+Public IP Addresses:
+Public IP addresses are the opposite of private and are used by devices that reside on the internet and can be accessed by anyone with an internet connection. Public IP addresses are used, for example, to host websites that you can connect to from your device. When your internet router connects to the internet, it is assigned a public IP address from your internet service provider.
+
+How do IP Addresses talk to each other?
+On a local network as well as having an IP address, devices also have a unique hardware address, also known as a MAC address. This MAC address is essential for the devices to talk to each other. The format of a MAC address looks like the following:
+
+
+The first three blocks of characters represent the manufacturer of the device. In the above example, the device is Apple, and the last three blocks are random numbers that should be unique to the device.
+
+If IP address 192.168.1.15 wanted to talk to 192.168.1.22, it would first have to send out an ARP (Address Resolution Protocol) request. This request would get sent to every device on the network. Once the device with the IP address 192.168.1.22 received the request, it would send back an ARP Reply message saying 192.168.1.22 has the hardware address 44:F2:1B:83:11:7A. Now communication can commence. Once devices have received an ARP Reply message, they don't need to keep on asking for the MAC address as the computer keeps it in a local database called an ARP Cache.
+
+
+But what if the device you want to talk to is on a different network or on the internet. The request would then be sent to the default gateway, better known as your router. After this, the router can locate where the request needs to be sent to. As the device on the internet cannot reply directly back to you as you have a private IP address, the internet device instead sends it back to your router's public IP addresses which then forwards the request to you, a process better known as NAT (Network Address Translation). Your device knows whether an IP address resides on a local or remote network by using its subnet mask, a subnet address is a little bit out of the scope of this lesson, but you can learn more here (as well as more about IP addresses) https://www.youtube.com/watch?v=s_Ntt6eTn94
+
+When you connect your device via network cable or WiFi to a network, you are assigned an IP address, subnet mask, gateway address, and more than likely a DNS Server address (more on DNS in the next lesson). The mechanism used to achieve this is called DHCP (Dynamic Host Configuration Protocol) and is built-in and pre-configured to most home internet routers.
+

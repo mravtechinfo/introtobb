@@ -1,0 +1,65 @@
+What is DNS
+https://app.hackinghub.io/nbbc-what-is-dns
+
+What is DNS?
+As you learned in the previous lesson, devices talk to each other using their IP addresses, but the problem is that these IP addresses aren't very memorable and could also change over time. So, for example, instead of accessing HackingHub by going to the IP address 104.21.38.139, you instead type the domain name app.hackinghub.io which gets translated to the correct IP address using its DNS records.
+
+What is a domain name?
+Firstly let's confirm what a domain name is. Anybody can pay a nominal fee and register their own domain name. There are three different types of domain names that can be registered:
+
+Top-Level Domain - TLD
+These are the domain names you'll mostly recognise, such as .com, .net, .org, etc. However, later on more TLD's where added to cover domain shortages. These include lesser-known TLD's such as .biz, .club, .job, .ninja, etc.
+
+Country Code Top-Level Domain - ccTLD
+These domain names are geographically based, such as .co.uk for the U.K, .fr for French domains, .au for Australian domains, etc. Even if you don't reside in those countries, you can usually register the domains anyway.
+
+Sponsored Top-Level Domain - sTLD
+These domains are usually more restricted and can only be registered by institutions; these include domains such as .edu, .gov, .mil, etc.
+
+What are subdomains?
+Once you've registered a domain name you're able to create an unlimited amount of subdomains, a subdomain is any text which sits before the domain name and is separated with a period (.) a subdomain is also referred to as a label.
+
+Subdomains are made up of characters a-z, 0-9 and hyphens - and can be a maximum of 63 characters. Subdomains can also have subdomains but the total size of the whole domain cannot exceed 253 characters.
+
+How does it work?
+When you request a website, quite a lot of things happen in the background to get the IP address.
+
+1) Your computer checks its local database to see if you've recently requested it.
+
+2) If your computer doesn't have the answer you'll then need to make a request to the DNS server specified in your IP settings, this is usually your internet service provider's DNS server. If anyone using the same ISP as you has also recently requested that address, the ISP will have a record of it and return it to you straight away.
+
+3) If nothing is found, the ISP DNS server needs to communicate with the domain name's name server that you are requesting. It does this by talking to the internet's root domain servers, which points the ISP to the correct name server for the domain.
+
+4) The ISP then connects to the name server for the domain and requests the record for the domain. The name server replies, and the result is returned to the client, and now the client can communicate with the domain.
+
+
+DNS Record types:
+DNS Servers host multiple record types; we wanted to exchange a domain name for an IPv4 address in the above example known as an A record. Check out the below table to see other DNS record types.
+
+A Type
+
+This is the record type that contains an IPv4 response such as 1.2.3.4
+
+AAAA Type
+
+This record type contains an IPv6 response for hosts that support IPv6.
+
+MX Type
+
+This record advises the address of the server that handles the domain's email.
+
+CNAME Type
+
+This response points us to another DNS record. For example, if we had a shop hosted by Shopify we might have the address shop.hackinghub.io with points to shops.myshopify.com then Shopify's DNS server will handle the request.
+
+NS Type
+
+This record advised the addresses of the name servers for the domain. A subdomain might handle its own DNS records so this is a useful record to point to other servers.
+
+TXT Type
+
+These records can contain textual information and can be used for multiple reasons, some common ones are providing confirmation that you have ownership over a domain for 3rd party services or the prevention of SPAM email.
+
+PTR Type
+
+A PTR record is like a reverse lookup for IP addresses. So you can search for an IP address and find the domain name which is associated with it.

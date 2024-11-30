@@ -1,0 +1,26 @@
+What is the Internet
+https://app.hackinghub.io/nbbc-what-is-the-internet
+
+Sometimes people use the terms internet and world wide web interchangeably but they are in fact different. The internet is basically just a vast collection of connected networks that span the majority of the world. The World Wide Web or just "the web" for short are websites (just like this one) that are accessed over the internet using your browser and provided using web servers (more on this later).
+
+As mentioned previously the internet is a vast collection of connected networks so let's explore what is a network.
+
+What is a network?
+You more than likely have a mini-network at home consisting of at least a router for connecting to the internet and your computer/laptop, but could also include other network-capable devices such as phones, tablets, Smart TVs, printers, smart lights, a smart speaker, and more, all capable of talking to each other and the internet, usually connected with network cable or more commonly via Wi-Fi. This type of network is commonly called a LAN (Local Area Network).
+
+
+
+
+
+
+The other type is called a WAN (Wide Area Network), which is a bunch of connected networks such as the one you might find at a school or place of work. Technically the internet is classed as a WAN as it's a vast collection of connected networks.
+
+Network Layouts:
+Throughout the development of networks, there have been various types of layouts, technically known as topologies. Each topology had its pros and cons, but what has been the most common network for, say, the past 15 - 20 years has been the star topology (although Mesh is also making a comeback via Wi-Fi technology).
+
+The star topology is where all the devices are connected to each other through one central place (although, technically speaking, there can be multiple central places connected to each other). This central place is called a switch (previously a hub); On your home network, the switch is more than likely your router, which devices can be connected either physically with network cables or via Wi-Fi. On more extensive networks, the switch is a stand-alone device. It's the switch's job to guide where traffic needs to go, so it will remember that computer A is connected to  port 1 and computer B is connected to port 2. So when the switch receives data from computer A connected to port 1 that wants to talk to computer B, it can send the data down the network cable connected to port 2.
+
+Before switches, we had hubs which just repeated any information it received down every other port on the hub, obviously the evolution of hubs into switches managed to cut down on the amount of traffic on a network and also increased security by not sending data to a computer that didn't require it.
+
+Extending your network:
+You can connect multiple networks using a router. It makes it possible for us to communicate with a device on the other side of the world, passing through numerous networks in a matter of milliseconds. For example, your home network connects to the rest of the internet through your router using an ISP (Internet Service Provider) through the medium of fibre optic cables, copper cables (phone lines), satellite, or even with the advancement of 4G or 5G speeds through a mobile phone provide
